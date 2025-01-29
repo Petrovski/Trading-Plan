@@ -1,3 +1,8 @@
+## Trading Plan
+
+A simple application that helps traders create a plan for the trading day
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
