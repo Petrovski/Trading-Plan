@@ -1,6 +1,6 @@
 ## Trading Plan
 
-A simple application that helps traders create a plan for the trading day
+An application that helps traders create a plan for the trading day. Plan out key levels, market context, and potential scenarios to get you prepared on where to trade.
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
