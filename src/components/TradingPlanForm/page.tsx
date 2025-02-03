@@ -20,7 +20,7 @@ import {
 import { useToast } from '@chakra-ui/toast';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-
+import styles from './styles.module.css';
 
 type FormData = {
   date: Date;
@@ -78,7 +78,7 @@ const TradingPlanForm: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('/api/trades', formData);
+      const response = await axios.post('/api/plans', formData);
       console.log('Trade Plan Saved:', response.data);
       toast({
         title: 'Trade plan saved!',
@@ -100,7 +100,7 @@ const TradingPlanForm: React.FC = () => {
   };
 
   return (
-    <Container maxW="container.sm" py={8}>
+    <Container className={styles.tradePlanFormContainer} maxW="container.sm" py={8}>
       <Heading mb={6}>Daily Trading Plan</Heading>
       <Box
         as="form"
