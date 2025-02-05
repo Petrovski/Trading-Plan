@@ -143,7 +143,7 @@ const TradingPlanForm: React.FC = () => {
           <FormControl id="marketContextNotes">
             <FormLabel>Market Context Notes</FormLabel>
             <Textarea
-              className="input-width"
+              className={styles.input}
               name="marketContextNotes"
               value={formData.marketContextNotes}
               onChange={handleChange}
@@ -156,7 +156,7 @@ const TradingPlanForm: React.FC = () => {
           <FormControl id="nearestMCVPOC1" isRequired>
             <FormLabel>Nearest MCVPOC Level 1</FormLabel>
             <Input
-              className="input-width"
+              className={styles.input}
               name="nearestMCVPOC1"
               value={formData.nearestMCVPOC1}
               onChange={handleChange}
@@ -166,7 +166,7 @@ const TradingPlanForm: React.FC = () => {
           <FormControl id="nearestMCVPOC2" isRequired>
             <FormLabel>Nearest MCVPOC Level 2</FormLabel>
             <Input
-              className="input-width"
+              className={styles.input}
               name="nearestMCVPOC2"
               value={formData.nearestMCVPOC2}
               onChange={handleChange}
@@ -176,7 +176,7 @@ const TradingPlanForm: React.FC = () => {
           <FormControl id="yVPOC" isRequired>
             <FormLabel>yVPOC</FormLabel>
             <Input
-              className="input-width"
+              className={styles.input}
               name="yVPOC"
               value={formData.yVPOC}
               onChange={handleChange}
@@ -186,7 +186,7 @@ const TradingPlanForm: React.FC = () => {
           <FormControl id="NVPOCs" isRequired>
             <FormLabel>NVPOCs</FormLabel>
             <Input
-              className="input-width"
+              className={styles.input}
               name="NVPOCs"
               value={formData.NVPOCs}
               onChange={handleChange}
@@ -199,7 +199,7 @@ const TradingPlanForm: React.FC = () => {
           <FormControl id="ONH" isRequired>
             <FormLabel>ONH</FormLabel>
             <Input
-              className="input-width"
+              className={styles.input}
               name="ONH"
               value={formData.ONH}
               onChange={handleChange}
@@ -209,7 +209,7 @@ const TradingPlanForm: React.FC = () => {
           <FormControl id="ONL" isRequired>
             <FormLabel>ONL</FormLabel>
             <Input
-              className="input-width"
+              className={styles.input}
               name="ONL"
               value={formData.ONL}
               onChange={handleChange}
@@ -219,7 +219,7 @@ const TradingPlanForm: React.FC = () => {
           <FormControl id="ONMID" isRequired>
             <FormLabel>ONMID</FormLabel>
             <Input
-              className="input-width"
+              className={styles.input}
               name="ONMID"
               value={formData.ONMID}
               onChange={handleChange}
@@ -229,7 +229,7 @@ const TradingPlanForm: React.FC = () => {
           <FormControl id="ONVPOC" isRequired>
             <FormLabel>ONVPOC</FormLabel>
             <Input
-              className="input-width"
+              className={styles.input}
               name="ONVPOC"
               value={formData.ONVPOC}
               onChange={handleChange}
