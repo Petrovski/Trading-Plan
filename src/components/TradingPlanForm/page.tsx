@@ -135,6 +135,8 @@ const TradingPlanForm: React.FC = () => {
               <option value="up">Up</option>
               <option value="down">Down</option>
               <option value="sideways">Sideways</option>
+              <option value="sideways">Sideways Lean Up</option>
+              <option value="sideways">Sideways Lean Down</option>
               <option value="trending">Trending</option>
             </Select>
           </FormControl>
