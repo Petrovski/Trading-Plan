@@ -16,13 +16,20 @@ Welcome to the **Trading Plan** app! This project helps traders organize, track,
    git clone https://github.com/yourusername/Trading-Plan.git
    ```
 2. **Install dependencies**
+
    ```bash
-   # Example for Node.js
+   # Server
+   cd server
+   npm install
+
+   # Client
+   cd client
    npm install
    ```
+
 3. **Run the app**
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Usage
