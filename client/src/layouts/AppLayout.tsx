@@ -46,6 +46,7 @@ export default function AppLayout() {
           <Box sx={{ flexGrow: 1 }} />
           <NavButton to="/plans" label="Plans" />
           <NavButton to="/plans/new" label="New Plan" />
+          <NavButton to="/rules" label="Rules" />
         </Toolbar>
       </AppBar>
 
