@@ -62,7 +62,7 @@ export const resolvers = {
     parseLiteral: (ast) => {
       if (ast.kind === Kind.STRING) return new Date(ast.value);
       throw new TypeError(
-        `Date cannot represent non-string value: ${ast.kind}`
+        `Date cannot represent non-string value: ${ast.kind}`,
       );
     },
   }),
@@ -95,7 +95,7 @@ export const resolvers = {
 
     async updateTradingPlan(
       _: unknown,
-      { id, input }: { id: string; input: any }
+      { id, input }: { id: string; input: any },
     ) {
       try {
         // (Optional) validate here too if you want strictness on updates

@@ -11,7 +11,7 @@ export default function PlansList() {
     TRADING_PLANS,
     {
       fetchPolicy: "cache-and-network",
-    }
+    },
   );
   const navigate = useNavigate();
 
@@ -28,7 +28,8 @@ export default function PlansList() {
       field: "context",
       headerName: "Context",
       width: 140,
-      valueGetter: (_value, row) => row?.daily?.marketContext ?? "—",
+      valueGetter: (_value, row) =>
+        row?.daily?.marketContext?.toUpperCase() ?? "—",
     },
     {
       field: "accountSize",
@@ -66,8 +67,8 @@ export default function PlansList() {
                   typeof plan.daily.date === "string"
                     ? plan.daily.date
                     : plan.daily.date instanceof Date
-                    ? plan.daily.date.toISOString()
-                    : undefined,
+                      ? plan.daily.date.toISOString()
+                      : undefined,
               }
             : undefined,
         }))

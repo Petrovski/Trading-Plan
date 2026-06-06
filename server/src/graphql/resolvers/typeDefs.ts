@@ -1,6 +1,6 @@
 import { gql } from "graphql-tag";
 
-export const typeDefs = gql/* GraphQL */ `
+export const typeDefs = gql /* GraphQL */ `
   scalar Date
 
   type DailyPlan {

@@ -43,9 +43,10 @@ export default function AppLayout() {
           >
             Trading Plan
           </Typography>
-          <Box sx={{ flexGrow: 1 }} />
-          <NavButton to="/plans" label="Plans" />
+          <Box sx={{ flexGrow: 1 }} />{" "}
           <NavButton to="/plans/new" label="New Plan" />
+          <NavButton to="/plans" label="Plans" />
+          <NavButton to="/trades" label="Trades" />
           <NavButton to="/rules" label="Rules" />
         </Toolbar>
       </AppBar>

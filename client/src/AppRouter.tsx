@@ -5,6 +5,7 @@ import PlansList from "./components/PlansList";
 import PlanDetails from "./components/PlanDetails";
 import NotFound from "./pages/NotFound";
 import Rules from "./pages/Rules";
+import Trades from "./pages/Trades";
 
 export default function AppRouter() {
   return (
@@ -15,7 +16,9 @@ export default function AppRouter() {
         <Route path="plans/new" element={<CreateTradingPlanWizard />} />
         <Route path="plans/:id" element={<PlanDetails />} />
         <Route path="/rules" element={<Rules />} />
+        <Route path="/trades" element={<Trades />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/404" element={<NotFound />} />
       </Route>
     </Routes>
   );

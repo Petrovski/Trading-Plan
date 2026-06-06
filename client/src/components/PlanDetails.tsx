@@ -36,7 +36,7 @@ export default function PlanDetails() {
     {
       variables: { id: id! },
       skip: !id, // wait for :id
-    }
+    },
   );
 
   if (!id) return <Typography color="error">Missing plan id.</Typography>;
@@ -131,7 +131,7 @@ export default function PlanDetails() {
             value={fmtStr(
               Array.isArray(p.daily?.NVPOCs)
                 ? p.daily.NVPOCs.join(", ")
-                : p.daily?.NVPOCs
+                : p.daily?.NVPOCs,
             )}
           />
         </Grid>
